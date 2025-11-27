@@ -1,0 +1,32 @@
+# Build artifacts
+*.hex
+*.elf
+*.bin
+*.map
+*.obj
+*.o
+*.d
+
+# Arduino IDE specific
+*.ino.hex
+*.ino.elf
+build/
+.pio/
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Gemini related files
+GEMINI.md
+
+# Credentials
+credentials.h
+secrets.h
+config_secrets.h
