@@ -2,68 +2,68 @@
   <img src="https://www.arduino.cc/en/uploads/Main/arduino-logo-small.png" alt="Arduino Logo" width="200"/>
 </p>
 
-# ESP32 Wetterstation mit BME280
+# ESP32 Weather Station with BME280
 
-![Lizenz](https://img.shields.io/badge/license-MIT-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
 ![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white)
 
-Eine einfache, aber leistungsstarke Wetterstation, die auf einem ESP32 basiert und einen BME280-Sensor zur Messung von Temperatur, Luftfeuchtigkeit und Luftdruck verwendet. Die Daten werden auf einem gestochen scharfen SSD1306 OLED-Display angezeigt.
+A simple but powerful weather station based on an ESP32 and a BME280 sensor for measuring temperature, humidity, and atmospheric pressure. The data is displayed on a crisp SSD1306 OLED display.
 
 ## ✨ Features
 
--   🌡️ **Temperaturmessung** in Celsius
--   💧 **Luftfeuchtigkeitsmessung** in %RH
--   🎈 **Luftdruckmessung** in hPa
--   📺 **OLED-Display** zur Anzeige der Daten
--   🤖 **FreeRTOS-basiert** für stabile und parallele Ausführung
+-   🌡️ **Temperature measurement** in Celsius
+-   💧 **Humidity measurement** in %RH
+-   🎈 **Pressure measurement** in hPa
+-   📺 **OLED display** for data visualization
+-   🤖 **FreeRTOS-based** for stable and parallel execution
 
 ## 🛠️ Hardware
 
-| Komponente      | Beschreibung                               |
+| Component       | Description                                |
 | --------------- | ------------------------------------------ |
-| **ESP32**       | Mikrocontroller mit integriertem WLAN/BT   |
-| **BME280**      | Sensor für Temperatur, Feuchtigkeit, Druck |
+| **ESP32**       | Microcontroller with integrated WiFi/BT    |
+| **BME280**      | Sensor for temperature, humidity, pressure |
 | **SSD1306**     | 128x64 I2C OLED Display                    |
-| **Breadboard**  | Für den einfachen Aufbau                   |
-| **Kabel**       | Dupont-Kabel zur Verbindung                |
+| **Breadboard**  | For easy assembly                          |
+| **Cables**      | Dupont cables for connections              |
 
 ## ⚙️ Software & Installation
 
-### Benötigte Bibliotheken
+### Required Libraries
 
-Stellen Sie sicher, dass die folgenden Bibliotheken in Ihrer Arduino IDE installiert sind:
+Make sure the following libraries are installed in your Arduino IDE:
 
 -   `Adafruit GFX Library`
 -   `Adafruit SSD1306`
 -   `Adafruit BME280 Library`
 
-### Einrichtung
+### Setup
 
-1.  **Verkabelung:** Verbinden Sie die Komponenten wie folgt:
-    -   **BME280 & SSD1306 an ESP32:**
+1.  **Wiring:** Connect the components as follows:
+    -   **BME280 & SSD1306 to ESP32:**
         -   `SDA` -> `GPIO 21`
         -   `SCL` -> `GPIO 22`
         -   `VCC` -> `3.3V`
         -   `GND` -> `GND`
 2.  **Arduino IDE:**
-    -   Öffnen Sie `Wetterstation/Wetterstation.ino`.
-    -   Wählen Sie das Board "ESP32 Dev Module".
-    -   Wählen Sie den korrekten COM-Port.
-3.  **Hochladen:** Kompilieren und laden Sie den Sketch auf den ESP32.
+    -   Open `Wetterstation/Wetterstation.ino`.
+    -   Select the board "ESP32 Dev Module".
+    -   Select the correct COM port.
+3.  **Upload:** Compile and upload the sketch to the ESP32.
 
-## 📁 Code-Struktur
+## 📁 Code Structure
 
-Das Projekt ist zur besseren Übersicht in mehrere Dateien aufgeteilt:
+The project is divided into multiple files for better organization:
 
 ```
 Wetterstation/
-├── Wetterstation.ino   # Hauptdatei mit setup() und loop()
-├── config.h            # Konfigurationen (Pins, Adressen)
-├── globals.h           # Globale Variablen und Objekte
-└── tasks.h             # RTOS-Tasks für Messung und Anzeige
+├── Wetterstation.ino   # Main file with setup() and loop()
+├── config.h            # Configuration (pins, addresses)
+├── globals.h           # Global variables and objects
+└── tasks.h             # RTOS tasks for measurement and display
 ```
 
-## 📜 Lizenz
+## 📜 License
 
-Dieses Projekt ist unter der **MIT-Lizenz** lizenziert. Siehe die [LICENSE](LICENSE)-Datei für weitere Details.
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more details.
