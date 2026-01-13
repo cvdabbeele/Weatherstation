@@ -8,7 +8,9 @@
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
 ![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white)
 
-Please ignore this project.  It's sole purpose was for me to learn to use the techniques from Andreas' youtube video called " Why AI Agents Replaced the Arduino IDE in My ESP32 Projects (Claude Code, Gemini CLI, Codex) "  ( https://www.youtube.com/watch?v=5DG0-_lseR4)
+Please ignore this project.  
+It's sole purpose was/is to help me learn how to use the techniques from Andreas Spiess' youtube video called **" Why AI Agents Replaced the Arduino IDE in My ESP32 Projects (Claude Code, Gemini CLI, Codex) "**  ( https://www.youtube.com/watch?v=5DG0-_lseR4)
+This capability is a milestone for me.  Big thank you to Andres Spiess.
 
 A simple but powerful weather station based on an ESP32 and a BME280 sensor for measuring temperature, humidity, and atmospheric pressure. The data is displayed on a crisp SSD1306 OLED display.
 
